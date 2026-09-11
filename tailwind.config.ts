@@ -1,6 +1,6 @@
-/// <reference types="node" />
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
   content: [
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -53,11 +53,13 @@ module.exports = {
           '100%': { transform: 'translateY(100%)' },
         },
         flicker: {
-          '0%, 100%': { opacity: 1 },
-          '50%': { opacity: 0.95 },
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.95' },
         },
       },
     },
   },
   plugins: [],
 }
+
+export default config
