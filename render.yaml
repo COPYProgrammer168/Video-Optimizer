@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: video-optimizer
+    runtime: node
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
+    env: node
+    plan: free
+    nodeVersion: '24'
