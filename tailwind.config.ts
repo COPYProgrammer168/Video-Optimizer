@@ -1,3 +1,4 @@
+/// <reference types="node" />
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
