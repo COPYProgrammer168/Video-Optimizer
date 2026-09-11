@@ -7,4 +7,3 @@ services:
     env: node
     plan: free
     nodeVersion: '24'
-    publishDir: .next
